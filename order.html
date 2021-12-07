@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catalogStyle.css">
+  <link rel="stylesheet" href="orderStyle.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+  <title>Bulochka</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" class="img">
+          <img src="assets/logo.png" alt="">
+        </a>
+        <a href="index.html" class="text">Bulochka</a>
+      </div>
+      <a href="catalog.html" class="item left">Каталог</a>
+      <a href="search.html" class="item left">Поиск</a>
+      <a href="cart.html" class="item">Корзина <span id="productsNumber"></span></a>
+      <a href="order.html" class="item active">Заказать</a>
+    </div>
+    
+    <div id="burger">
+      <span class="material-icons">menu</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="order">
+      <div class="container">
+        <div>
+          <h1>Оформление заказа</h1>
+          <p>
+            <label>Имя: </label>
+            <input id="name" type="text">
+          </p>
+          <p>
+            <label>Адрес: </label>
+            <input id="address" type="text">
+          </p>
+          <p>
+            <label>Телефон: </label>
+            <input id="phone" type="tel" name="">
+          </p>
+          <button id="submit">Заказать</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Курсовая работа. Чернин Павел. ИКБО-13-20. РТУ МИРЭА. 2021</div>
+  </footer>
+
+  <script src="menuScript.js"></script>
+  <script src="orderScript.js"></script>
+</body>

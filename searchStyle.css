@@ -1,0 +1,23 @@
+#search {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  border-bottom: 2px solid var(--blue);
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#search input {
+  flex-grow: 1;
+  font-size: 18px;
+  border: none;
+}
+
+#search input:focus {
+  outline: none;
+}
+
+#search span {
+  cursor: pointer;
+}

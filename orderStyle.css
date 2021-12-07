@@ -1,0 +1,51 @@
+#order .container {
+  border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+  #order .container {
+    padding: 110px 10px;
+  }
+}
+
+#order h2 {
+  margin-bottom: 40px;
+}
+
+#order p {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+#order label {
+  width: 170px;
+}
+
+#order input {
+  font-size: 18px;
+  color: inherit;
+  flex-grow: 1;
+  border: none;
+  border-bottom: 2px solid var(--blue);
+}
+
+#order input:focus {
+  outline: none;
+}
+
+#order button {
+  margin-top: 35px;
+  background-color: transparent;
+  color: var(--blue);
+  border: 15px solid transparent;
+  border-radius: 18px;
+  padding: 12px 50px;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#order button:hover {
+  border-color: var(--orange);
+}

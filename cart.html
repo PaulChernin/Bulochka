@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catalogStyle.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+  <title>Bulochka</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" class="img">
+          <img src="assets/logo.png" alt="">
+        </a>
+        <a href="index.html" class="text">Bulochka</a>
+      </div>
+      <a href="catalog.html" class="item left">Каталог</a>
+      <a href="search.html" class="item left">Поиск</a>
+      <a href="cart.html" class="item active">Корзина <span id="productsNumber"></span></a>
+      <a href="order.html" class="item">Заказать</a>
+    </div>
+    
+    <div id="burger">
+      <span class="material-icons">menu</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="catalog">
+      <div class="container">
+        <h1 class="header">Добавленные в корзину</h2>
+        <div class="list">
+
+          <template id="product">
+            <div class="item">
+              <div class="image">
+                <img src="assets/cookies.jpg" alt="">
+              </div>          
+              <div class="bottom">
+                <div class="text">
+                  <h3 class="productName"></h3>
+                  <p class="description"></p>
+                </div>
+                <div class="menu">
+                  <span class="action material-icons-outlined">
+                    remove_circle
+                  </span>
+                </div>
+              </div>
+            </div>
+          </template>
+
+        </div>
+
+        <a href="order.html">Перейти к заказу</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Курсовая работа. Чернин Павел. ИКБО-13-20. РТУ МИРЭА. 2021</div>
+  </footer>
+
+  <script type="module" src="cartScript.js"></script>
+  <script src="menuScript.js"></script>
+</body>
+</html>

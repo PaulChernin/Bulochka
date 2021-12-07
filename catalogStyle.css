@@ -1,0 +1,101 @@
+#catalog {
+  margin: 100px 0 0;
+}
+
+#catalog .container {
+  border-bottom: none;
+  padding: 0;
+  margin: 50px auto;
+}
+
+@media (max-width: 1024px) {
+  #catalog .container {
+    padding: 0 10px;
+  }
+}
+
+#catalog h2, h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  #catalog h2, h1 {
+    text-align: center;
+  }
+}
+
+#catalog .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (max-width: 1024px) {
+  #catalog .list {
+    justify-content: space-around;
+  }
+}
+
+#catalog .item {
+  width: 328px;
+  margin-bottom: 45px;
+}
+
+#catalog .image {
+  box-sizing: border-box;
+  height: 210px;
+  margin-bottom: 28px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+#catalog .item:hover .image, #catalog .item.added .image {
+  border: 10px solid #E98724;
+}
+
+#catalog .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#catalog .menu {
+  width: 53px;
+  margin: 0 15px;
+}
+
+#catalog .action {
+  color: var(--orange);
+  font-size: 50px;
+  display: none;
+  cursor: pointer;
+}
+
+#catalog .item:hover .action, #catalog .item.added .action {
+  display: block;
+}
+
+#catalog h3 {
+  font-size: 27px;
+  color: var(--orange);
+  margin-bottom: 11px;
+}
+
+#catalog a {
+  margin-top: 35px;
+  background-color: transparent;
+  color: var(--blue);
+  border: 15px solid transparent;
+  border-radius: 18px;
+  padding: 12px 50px;
+  font-size: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#catalog a:hover {
+  border-color: var(--orange);
+}
