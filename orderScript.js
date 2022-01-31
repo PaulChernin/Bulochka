@@ -19,4 +19,6 @@ submitElement.addEventListener('click', () => {
   request.setRequestHeader('Content-type', 'application/json; charset=utf-8')
 
   request.send(json)
+
+  window.location.href = './index.html'
 })
